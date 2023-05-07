@@ -113,7 +113,7 @@ export const AuthContextProvider = (props) => {
   async function disconnectWallet() {
     if (window.ethereum) {
       try {
-        await window.ethereum.disconnect();
+        // await window.ethereum.disconnect();
         setIsConnected(false);
         setAccount("");
       } catch (error) {
