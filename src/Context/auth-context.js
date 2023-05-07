@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ethers from "ethers";
+// import ethers from "ethers";
 
 // const CHAIN_ID = 1612993563037;
 
@@ -133,7 +133,7 @@ export const AuthContextProvider = (props) => {
     if (!isConnected) {
       connectWallet();
     }
-  }, []);
+  }, [isConnected]);
   return (
     <AuthContext.Provider
       value={{
