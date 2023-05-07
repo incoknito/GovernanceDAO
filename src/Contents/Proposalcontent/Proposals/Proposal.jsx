@@ -1,10 +1,49 @@
 import './Proposal.css'
 import { RxDotFilled } from 'react-icons/rx'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
-import { faMessage, faThumbsDown, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import { faCheckCircle, faMessage, faThumbsDown, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 
 const Proposal = () => {
+    const [upVotePopup, setUpVotePopup] = useState(false);
+    const [approvePopup, setApprovePopup] = useState(false);
+    const [downVotePopup, setDownVotePopup] = useState(false);
+    const [approveDownPopup, setApproveDownPopup] = useState(false);
+    const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
+
+    const upVote = (event) => {
+        setPopupPosition({ x: event.clientX, y: event.clientY });
+        setUpVotePopup(true);
+    };
+
+    const downVote = (event) => {
+        setPopupPosition({ x: event.clientX, y: event.clientY });
+        setDownVotePopup(true);
+    };
+
+    const handleCancelClick = () => {
+        setDownVotePopup(false);
+      };
+
+    const approve = () => {
+        setUpVotePopup(false);
+        setApprovePopup(true);
+    };
+
+    const downApprove = () => {
+        setDownVotePopup(false);
+        setApproveDownPopup(true);
+    };
+
+    const handleApproveClose = () => {
+        setApprovePopup(false);
+    };
+
+    const handleDownVoteApproveClose = () => {
+        setApproveDownPopup(false);
+    };
+
     return (
         <div>
             <div className="proposal">
@@ -39,8 +78,12 @@ const Proposal = () => {
                 </div>
 
                 <div className="voting_icons">
-                    <FontAwesomeIcon className='icon' icon={faThumbsUp} />
-                    <FontAwesomeIcon className='icon' icon={faThumbsDown} />
+                    <a href="#" onClick={upVote}>
+                        <FontAwesomeIcon className='icon' icon={faThumbsUp} />
+                    </a>
+                    <a href="#" onClick={downVote}>
+                        <FontAwesomeIcon className='icon' icon={faThumbsDown} />
+                    </a>
                     <FontAwesomeIcon className='icon' icon={faMessage} />
                     <p>Bet</p>
                 </div>
@@ -60,6 +103,45 @@ const Proposal = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Popups */}
+            {upVotePopup && (
+                <div className='popup' style={{ top: popupPosition.y, left: popupPosition.x }}>
+                    <div className="upvote">
+                        <p>Upvote?</p>
+                        <p className='text'>By upvoting, you are in support of the proposal and you would need to approve and sign the contract.</p>
+                        <button className='cancel' onClick={handleCancelClickS}>Cancel</button>
+                        <button className='approve' onClick={approve}>Approve</button>
+                    </div>
+                </div>
+            )}
+
+            {approvePopup && (
+                <div className="approve_Popup">
+                    <FontAwesomeIcon className='icon' icon={faCheckCircle} />
+                    <p>Successfully Voted, you can continue exploring</p>
+                    <button className='close' onClick={handleApproveClose}>Continue</button>
+                </div>
+            )}
+
+            {downVotePopup && (
+                <div className='popup' style={{ top: popupPosition.y, left: popupPosition.x }}>
+                    <div className="downVote">
+                        <p>Downvote?</p>
+                        <p className='text'>By downvoting, you are not in support of the proposal and you would need to approve and sign the contract.</p>
+                        <button className='cancel' onClick={handleDownVoteClose}>Cancel</button>
+                        <button className='approve' onClick={downApprove}>Approve</button>
+                    </div>
+                </div>
+            )}
+
+            {approveDownPopup && (
+                <div className="approve_down_Popup">
+                    <FontAwesomeIcon className='icon' icon={faCheckCircle} />
+                    <p>Successfully Down voted, you can continue exploring</p>
+                    <button className='close' onClick={handleDownVoteApproveClose}>Continue</button>
+                </div>
+            )}
         </div>
     );
 };
