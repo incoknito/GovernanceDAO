@@ -1,0 +1,135 @@
+.welcome_header {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.welcome_header p,
+.welcome_header h3 {
+    color: #A1A1A1;
+}
+
+.welcome_header h3 {
+    margin-bottom: 20px;
+}
+
+.welcome_header .search_bar {
+    border: 1px solid #A1A1A1;
+    width: 350px;
+    padding: 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.welcome_header .search_bar .icon {
+    color: #A1A1A1;
+    margin-left: 10px;
+}
+
+.welcome_header .search_bar input {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+
+.welcome_header .search_bar input:focus {
+    outline: none;
+}
+
+.welcome_header .section_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome_header .section_two .search_and_sort {
+    display: flex;
+    align-items: center;
+}
+
+.welcome_header .section_two .search_and_sort .sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #A1A1A1;
+    border-radius: 20px;
+    width: 170px;
+    color: #A1A1A1;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.welcome_header .section_two .search_and_sort .sort .icon {
+    cursor: pointer;
+}
+
+.welcome_header .section_two .search_and_sort .sort .latest {
+    color: #00BCD4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.welcome_header .divider {
+    border: 1px solid #00BCD4;
+    margin: 20px 0;
+}
+
+.header_content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+/* Account Summary Table */
+.leaderboard_table {
+    border: 1px solid #A1A1A1;
+    min-height: 200px;
+    /* border-radius: 10px; */
+    padding: 15px 30px;
+}
+
+.leaderboard_table thead {
+    color: #FF5733;
+}
+
+.leaderboard_table thead th {
+    font-size: 14px;
+}
+
+.leaderboard_table table, 
+.leaderboard_table th, 
+.leaderboard_table td {
+    padding: 10px 2.1rem !important;
+    border-collapse: collapse; 
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.leaderboard_table tr {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+.leaderboard_table .round:first-child {
+    border-radius: 30px 0 0 30px;
+}
+
+.leaderboard_table .round:last-child {
+    border-radius: 0 30px 30px 0;
+}
+
+.leaderboard_table tbody td {
+    background-color: #E6F8FB;
+    /* padding: 10px 0;` */
+    border-spacing: 10px;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+.welcome_header {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.welcome_header p,
+.welcome_header h3 {
+    color: #A1A1A1;
+}
+
+.welcome_header h3 {
+    margin-bottom: 20px;
+}
+
+.welcome_header .search_bar {
+    border: 1px solid #A1A1A1;
+    width: 350px;
+    padding: 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.welcome_header .search_bar .icon {
+    color: #A1A1A1;
+    margin-left: 10px;
+}
+
+.welcome_header .search_bar input {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+
+.welcome_header .search_bar input:focus {
+    outline: none;
+}
+
+.welcome_header .section_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome_header .section_two .search_and_sort {
+    display: flex;
+    align-items: center;
+}
+
+.welcome_header .section_two .search_and_sort .sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #A1A1A1;
+    border-radius: 20px;
+    width: 150px;
+    color: #A1A1A1;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.welcome_header .section_two .search_and_sort .sort .icon {
+    cursor: pointer;
+}
+
+.welcome_header .section_two .search_and_sort .sort .latest {
+    color: #00BCD4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.welcome_header .section_two .see_history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #FF5733;
+    padding: 8px 0;
+    width: 135px;
+    margin-left: 200px;
+}
+
+.welcome_header .section_two .see_history p {
+    color: #FF5733;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.welcome_header .section_two .see_history .icon {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.welcome_header .divider {
+    border: 1px solid #00BCD4;
+    margin: 20px 0;
+}

@@ -1,0 +1,129 @@
+.homecontent {
+    padding: 0 25px;
+}
+
+.homecontent .welcome_salutation {
+    color: #C0C0C0;
+    margin-bottom: 20px;
+}
+
+.homecontent .divider {
+    border: 1px solid #00BCD4;
+}
+
+.homecontent .verified_amount_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.homecontent .verified_amount_buttons .icon {
+    color: #00BCD4;
+}
+
+.homecontent .verified_amount_buttons .verified {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    color: #A1A1A1;
+}
+
+.homecontent .verified_amount_buttons .verified .icon {
+    margin: 0 4px;
+    font-size: 15px;
+}
+
+.homecontent .verified_amount_buttons .verified_and_amount .amount {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.homecontent .verified_amount_buttons .verified_and_amount .ethereum_amount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #A1A1A1;
+}
+
+.homecontent .verified_amount_buttons .buttons {
+    display: flex;
+}
+
+.homecontent .verified_amount_buttons .buttons .button {
+    border: 1px solid #00BCD4;
+    padding: 8px 25px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* .homecontent .verified_amount_buttons .buttons .button:hover {
+    background: #00BCD4;
+} */
+
+.homecontent .verified_amount_buttons .buttons .button .icon {
+    margin: 0 10px;
+}
+
+/* Account Summary Table */
+ .account_summary {
+    border: 1px solid #A1A1A1;
+    min-height: 200px;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.homecontent .account_summary thead {
+    color: #FF5733;
+}
+
+.homecontent tr {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+.account_summary table, 
+.account_summary  th, 
+.account_summary td{
+    padding: 10px 2.17rem !important;
+    border-collapse: collapse; 
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.homecontent .account_summary #round:first-child {
+    border-radius: 30px 0 0 30px;
+}
+
+.homecontent .account_summary #round:last-child {
+    border-radius: 0 30px 30px 0;
+}
+
+.homecontent .account_summary tbody td {
+    background-color: #E6F8FB;
+    /* padding: 10px 0;` */
+    border-spacing: 10px;
+}
+
+/* Outcome Style */
+.homecontent .account_summary .passed,
+.homecontent .account_summary .winIng {
+    color: #309500;
+    font-weight: 700;
+}
+
+.homecontent .account_summary .failed,
+.homecontent .account_summary .lost {
+    color: #FF0000;
+    font-weight: 700;
+}
+
+.homecontent .account_summary .pending {
+    color: #A1A1A1;
+    font-weight: 700;
+}

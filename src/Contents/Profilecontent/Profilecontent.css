@@ -1,0 +1,76 @@
+.profilecontent {
+    border: 1px solid #A1A1A1;
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.profileheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileheader button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid #00BCD4;
+    color: #00BCD4;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.profilecontent .divider {
+    border: 1px solid #00BCD4;
+    margin: 5px 0;
+}
+
+.profilecontent .profile_picture {
+    /* padding: 20px; */
+    /* border: 1px solid #000; */
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profilecontent .profile_picture img {
+    width: 100px;
+    height: 100px;
+}
+
+.profilecontent .head {
+    font-size: 13px;
+    color: #FF5733;
+    font-weight: 600;
+}
+
+.profilecontent .username,
+.profilecontent .email_address,
+.profilecontent .devices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.profilecontent .username p:last-child,
+.profilecontent .email_address p:last-child,
+.profilecontent .devices p:last-child {
+    font-weight: 600;
+}
+
+.profilecontent .notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.profilecontent .notification p:last-child {
+    font-weight: 600;
+}

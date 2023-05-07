@@ -1,0 +1,107 @@
+.membership {
+    border: 1px solid #a1a1a1;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.membership .membership_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership .membership_header h2 {
+    color: #a1a1a1;
+    font-size: 18px;
+}
+
+.membership .membership_header button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.membership .profile_user {
+    font-size: 100px;
+    color: #a1a1a1;
+    margin: 10px 0;
+}
+
+.membership .member_details_buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.membership .member_details_buy .member_details div {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.membership .member_details_buy .buy_nft {
+    width: 230px;
+    border: 1px solid #a1a1a1;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.membership .member_details_buy .buy_nft h4 {
+    font-size: 15px;
+}
+
+.membership .member_details_buy .buy_nft p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.membership .member_details_buy .buy_nft button {
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #00BCD4;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.membership .divider {
+    margin: 25px 0;
+    border: 1px solid #00BCD4;
+}
+
+.membership .members_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership .members_footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00BCD4;
+}
+
+.membership .members_footer div p {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.membership .members_footer div .icon {
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #a1a1a1;
+    cursor: pointer;
+}

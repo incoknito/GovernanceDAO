@@ -1,0 +1,110 @@
+.win {
+    width: 550px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.win .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.win .header h1 {
+    font-size: 25px;
+}
+
+.win .header .icon {
+    color: #309500;
+    font-size: 30px;
+}
+
+.win .name_and_picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.win .name_and_picture .picture {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.win .name_and_picture .picture img {
+    width: 30px;
+}
+
+.win .section_two {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.win .section_two .proposed {
+    font-weight: 500;
+    color: #000;
+}
+
+.win .section_two .win_id span {
+    color: #000;
+}
+
+.win .section_two .proposed span {
+    color: #00BCD4;
+    font-weight: 700;
+}
+
+.win .name_and_picture .picture {
+    padding: 15px;
+    width: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.win .name_and_picture p {
+    color: #000;
+    font-weight: 600;
+}
+
+.win .verified_member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 125px;
+    margin-bottom: 20px;
+}
+
+.win .verified_member p {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.win .verified_member .icon {
+    font-size: 14px;
+    color: #00BCD4;
+}
+
+.win .see_more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.win .see_more .see {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 165px;
+}
+
+.win .see_more .see p,
+.win .see_more .see .icon {
+    color: #00BCD4;
+    font-weight: 600;
+}

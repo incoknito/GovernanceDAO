@@ -1,0 +1,59 @@
+.faq {
+    width: 500px;
+    border: 1px solid #A1A1A1;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.faq h2 {
+    color: #A1A1A1;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    color: #000;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.faq h4 {
+    color: #00BCD4;
+    font-size: 15px;
+    /* margin: 10px 0; */
+}
+
+.faq .divider {
+    border: 1px solid #A1A1A1;
+    margin: 10px 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border: 1px solid #A1A1A1;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.contact .icon,
+.contact p {
+    color: #A1A1A1;
+    cursor: pointer;
+}
+
+.message {
+    position: absolute;
+    padding: 20px;
+    background: #FFEEEB;
+    border-radius: 50%;
+    color: #FF5733;
+    right: 50px;
+    bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}

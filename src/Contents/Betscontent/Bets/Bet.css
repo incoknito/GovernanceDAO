@@ -1,0 +1,142 @@
+.bet {
+    width: 550px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.bet h1 {
+    font-size: 25px;
+}
+
+.bet .name_and_picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bet .section_two {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.bet .section_two .proposed {
+    font-weight: 500;
+    color: #000;
+}
+
+.bet .section_two .bet_id span {
+    color: #000;
+}
+
+.bet .section_two .proposed span {
+    color: #00BCD4;
+    font-weight: 700;
+}
+
+.bet .name_and_picture .picture {
+    /* padding: 15px;
+    width: 20px; */
+    /* border: 1px solid #000; */
+    border-radius: 20px;
+}
+
+.bet .name_and_picture .picture img {
+    width: 30px;
+}
+
+.bet .name_and_picture p {
+    color: #000;
+    font-weight: 600;
+}
+
+.bet .verified_member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.bet .verified_member p {
+    font-size: 12px;
+}
+
+.bet .verified_member .icon {
+    font-size: 14px;
+    color: #00BCD4;
+}
+
+.bet .odds_and_buttons .odds {
+    display: flex;
+}
+
+.bet .odds_and_buttons .odds p {
+    padding: 11px;
+    width: 120px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.bet .odds_and_buttons .odds p:first-child {
+    width: 80px;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    background-color: #FFE6E6;
+    color: #FF0000;
+}
+
+.bet .odds_and_buttons .odds p:last-child {
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #EAF4E6;
+    color: #309500;
+}
+
+.bet .bet_no {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background: #FF3333;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bet .bet_yes {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background: #59AA33;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bet .odds_and_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bet .see_more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bet .see_more p {
+    margin: 0 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bet .see_more p,
+.bet .see_more .icon {
+    color: #00BCD4;
+    cursor: pointer;
+}

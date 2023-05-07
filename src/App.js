@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// import Sidebar from './Components/Sidebar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home.jsx';
+import Proposal from './Pages/Proposal.jsx';
+import Bets from './Pages/Bets.jsx';
+import Wins from './Pages/Wins.jsx';
+import Leaderboard from './Pages/Leaderboard.jsx';
+import Profile from './Pages/Profile.jsx';
+import Help from './Pages/Help.jsx';
+import Sidebar from './Components/Sidebar.jsx';
+import Membership from './Pages/Membership';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Sidebar>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/proposal' element={<Proposal />} />
+            <Route path='/bets' element={<Bets />} />
+            <Route path='/wins' element={<Wins />} />
+            <Route path='/leaderboard' element={<Leaderboard />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/help' element={<Help />} />
+            <Route path='/membership' element={<Membership />} />
+          </Routes>
+        </Sidebar>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
